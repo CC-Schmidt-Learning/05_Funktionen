@@ -53,9 +53,14 @@
   //Postualat: one function = one job (uncle Bob)
  // SRP single responsibility principle 
 
- outPut(prompt("give me some text"));
+ output(getString("Maxine", "Mütze"));
+ function getString(firstName, familyName) {
+    const gap=" "; 
+    const outputstr="Hallo"+ gap  + firstName + gap + familyName + "!";
+    return outputstr;
+ };
 
-function outPut(outPutData) {
-    alert(outPutData);
-};
+ function output(outputData) {
+    console.log(outputData);
+ }
 
