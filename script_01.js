@@ -38,3 +38,24 @@
 // function ausgabeName(firstName, familyName) {
     // console.log("Genieße deinen Tag," + firstName + " " + familyName);
 // };
+
+ // Vorbereitung 
+
+ //ausgabeName(prompt("insert your name here"), prompt("insert your lastname here")); //Parameter ist das Eingangstor und Argumente sind Daten für Parameter
+ 
+ function ausgabeName(firstName, familyName) {
+    const gap=" "; 
+    const outputstr="Hallo"+ gap  + firstName + gap + familyName + "!";
+
+ console.log(outputstr);
+ };
+
+  //Postualat: one function = one job (uncle Bob)
+ // SRP single responsibility principle 
+
+ outPut(prompt("give me some text"));
+
+function outPut(outPutData) {
+    alert(outPutData);
+};
+
